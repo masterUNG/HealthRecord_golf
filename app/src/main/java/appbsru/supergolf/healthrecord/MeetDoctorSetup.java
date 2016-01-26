@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.Spinner;
 
 import java.util.Calendar;
@@ -13,8 +14,9 @@ public class MeetDoctorSetup extends AppCompatActivity {
 
     //Explicit
     private Spinner daySpinner, monthSpinner, yearSpinner;
-    private String meetDateString, meetMonthString, meetYearString;
-
+    private String meetDateString, meetMonthString, meetYearString,
+            doctorString, remarkString;
+    private EditText doctorEditText, remarkEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +33,15 @@ public class MeetDoctorSetup extends AppCompatActivity {
         createSpinner();
 
     }   // Main Method
+
+    public void clickSaveData(View view) {
+
+        doctorString = doctorEditText.getText().toString().trim();
+        remarkString = remarkEditText.getText().toString().trim();
+
+
+
+    }   // clickSaveData
 
     private void createSpinner() {
 
@@ -94,8 +105,6 @@ public class MeetDoctorSetup extends AppCompatActivity {
     }   // createSpinner
 
 
-
-
     private void showCurrentTime() {
 
         Calendar currentCalendar = Calendar.getInstance();
@@ -109,6 +118,8 @@ public class MeetDoctorSetup extends AppCompatActivity {
         daySpinner = (Spinner) findViewById(R.id.spinner2);
         monthSpinner = (Spinner) findViewById(R.id.spinner3);
         yearSpinner = (Spinner) findViewById(R.id.spinner4);
+        doctorEditText = (EditText) findViewById(R.id.editText7);
+        remarkEditText = (EditText) findViewById(R.id.editText8);
 
 
     }   // bindWidget

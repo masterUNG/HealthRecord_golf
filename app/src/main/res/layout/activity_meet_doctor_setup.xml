@@ -70,5 +70,47 @@
                 android:id="@+id/spinner4"
                 android:layout_weight="1" />
         </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Doctor :"
+                android:id="@+id/textView26"
+                android:layout_weight="1"
+                android:textSize="@dimen/h3" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText7"
+                android:layout_weight="3" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remart :"
+            android:id="@+id/textView27"
+            android:textSize="@dimen/h3" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText8"
+            android:lines="4"
+            android:gravity="top" />
     </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clickSaveData"
+        android:text="Save data"
+        android:id="@+id/button3"
+        android:layout_alignParentBottom="true" />
 </RelativeLayout>
