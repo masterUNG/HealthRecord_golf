@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">Health Record</string>
+
+    <string name="section1">ประเมินความเสี่ยง</string>
+    <string name="section1icon">ประเมินความเสี่ยง</string>
+    <string name="section2">หลักปฎิบัติ</string>
+    <string name="section3">โภชนาการ</string>
+    <string name="section4">แนะนำแพทย์</string>
+    <string name="section5">นัดพบแพทย์</string>
+
+    <string name="section1_1">ประเมินความเสี่ยงเพื่อป้องกันโรค</string>
+    <string name="section1_2">ประเมินความเสี่ยงในช่วงเวลานั้น</string>
+
+    <string name="age">ช่วงอายุ</string>
+    <string name="sex">เพศ</string>
+    <string name="male">ชาย</string>
+    <string name="female">หญิง</string>
+    <string name="height">ความสูง</string>
+    <string name="meter">เมตร</string>
+    <string name="weight">น้ำหนัก</string>
+    <string name="kilo">กิโลกรัม</string>
+    <string name="width">เส้นรอบเอว</string>
+    <string name="centi">เซนติเมตร</string>
+    <string name="presser">ความดันโลหิต</string>
+    <string name="DM">โรคเบาหวานในญาติสายตรง\n(พ่อ แม่ พี่ หรือน้อง)</string>
+    <string name="have">มี</string>
+    <string name="nohave">ไม่มี</string>
+
+    <string name="risk">ความเสี่ยง</string>
+    <string name="intro">คำแนะนำ</string>
+
+    <string name="age1">อายุ</string>
+    <string name="year">ปี</string>
+
+    <string name="perform1">การออกกำลังกาย</string>
+    <string name="perform2">การตรวจระดับน้ำตาลในเลือดด้วยตนเอง</string>
+    <string name="perform3">การตรวจปัสสาวะด้วยตนเอง</string>
+    <string name="perform4">การดูแลช่องปาก</string>
+    <string name="perform5">การดูแลผิวหนัง</string>
+    <string name="perform6">การดูแลเท้า</string>
+    <string name="perform7">เบาหวานขณะตั้งครรภ์</string>
+    <string name="perform8">ภาวะฉุกเฉินในผู้ป่วยเบาหวาน</string>
+    <string name="perform9">โรคแทรกซ้อนที่เกิดจากเบาหวาน</string>
+
+    <string name="exercise1">แนวทางการออกกำลังกาย</string>
+    <string name="exercise2">หลักการออกกำลังกาย</string>
+    <string name="exercise3">ขั้นตอนการออกกำลังกาย</string>
+
+    <string name="smbg1">ความถี่ของการทำ SMBG</string>
+    <string name="smbg2">เทคนิคการตรวจ</string>
+
+    <string name="urinalysis1">ความถี่การตรวจปัสสาวะ</string>
+    <string name="urinalysis2">ขั้นตอนการตรวจปัสสาวะ</string>
+    <string name="urinalysis3">ข้อแนะนำการตรวจปัสสาวะด้วยแถบ</string>
+    <string name="urinalysis4">การตรวจหาสารคีโตนในปัสสาวะ</string>
+
+    <string name="foot1">การตรวจดูเท้าด้วยตนเอง</string>
+    <string name="foot2">การบริหารเท้า</string>
+    <string name="foot3">วิธีป้องกันโรคแทรกซ้อนที่เท้า</string>
+    <string name="foot4">วิธีเลือกรองเท้า</string>
+
+    <string name="pregnant1">ความเสี่ยงเบาหวานขณะตั้งครรภ์</string>
+    <string name="pregnant2">โรคแทรกซ้อน</string>
+    <string name="pregnant3">หลักปฏิบัติเบาหวานขณะตั้งครรภ์</string>
+
+    <string name="emergency1">ภาวะคีโตซีส</string>
+    <string name="emergency2">ภาวะโคม่าจากน้ำตาลในเลือดสูง</string>
+    <string name="emergency3">ภาวะน้ำตาลในเลือดต่ำ</string>
+
+    <string name="complication1">โรคความดันโลหิตสูง</string>
+    <string name="complication2">โรคไขมันในเลือดสูง</string>
+    <string name="complication3">โรคหลอดเลือดแข็ง</string>
+    <string name="complication4">โรคตา</string>
+    <string name="complication5">โรคไต</string>
+    <string name="complication6">โรคปลายประสาทอักเสบ</string>
+
+    <string name="oral">หลักปฏิบัติการดูแลช่องปาก</string>
+
+    <string name="ketosis1">อาการ</string>
+    <string name="ketosis2">การรักษา</string>
+    <string name="ketosis3">การป้องกัน</string>
+    <string name="sugarlow1">ปัจจัยเสี่ยงต่อภาวะน้ำตาลในเลือดต่ำ</string>
+    <string name="sugarlow2">ภาวะน้ำตาลในเลือดต่ำไม่รุนแรง\nและปานกลาง</string>
+    <string name="sugarlow3">ภาวะน้ำตาลในเลือดต่ำชนิดรุนแรง</string>
+
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="appbsru.supergolf.healthrecord">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Section1Activity" />
+        <activity android:name=".MainHoldSection1" />
+        <activity android:name=".ResultOfSection11" />
+        <activity android:name=".Section12Activity" />
+        <activity android:name=".ResultOfSection12" />
+        <activity android:name=".Section2Activity" />
+        <activity android:name=".Section2HoldActivity" />
+        <activity android:name=".Section2Hold2Activity" />
+        <activity android:name=".Section2Hold3Activity" />
+        <activity android:name=".Section2Hold4Activity" />
+        <activity android:name=".Section2Hold5Activity" />
+        <activity android:name=".Section2Hold6Activity" />
+        <activity android:name=".Section2Hold7Activity" />
+        <activity android:name=".Section2Sup11Activity" />
+        <activity android:name=".Section2Sup12Activity" />
+        <activity android:name=".Section2Sup13Activity" />
+        <activity android:name=".Section2Sup21Activity" />
+        <activity android:name=".Section2Sup22Activity" />
+        <activity android:name=".Section2Sup31Activity" />
+        <activity android:name=".Section2Sup32Activity" />
+        <activity android:name=".Section2Sup33Activity" />
+        <activity android:name=".Section2Sup34Activity" />
+        <activity android:name=".Section2Sup41Activity" />
+        <activity android:name=".Section2Sup51Activity" />
+        <activity android:name=".Section2Sup61Activity" />
+        <activity android:name=".Section2Sup62Activity" />
+        <activity android:name=".Section2Sup63Activity" />
+        <activity android:name=".Section2Sup64Activity" />
+        <activity android:name=".Section2Sup71Activity" />
+        <activity android:name=".Section2Sup72Activity" />
+        <activity android:name=".Section2Sup73Activity" />
+        <activity android:name=".Section2Sup81Activity" />
+        <activity android:name=".Section2Sup811Activity" />
+        <activity android:name=".Section2Sup812Activity" />
+        <activity android:name=".Section2Sup813Activity" />
+        <activity android:name=".Section2Sup82Activity" />
+        <activity android:name=".Section2Sup83Activity" />
+        <activity android:name=".Section2Sup821Activity" />
+        <activity android:name=".Section2Sup822Activity" />
+        <activity android:name=".Section2Sup831Activity" />
+        <activity android:name=".Section2Sup832Activity" />
+        <activity android:name=".Section2Sup833Activity" />
+        <activity android:name=".Section2Sup91Activity" />
+        <activity android:name=".Section2Sup92Activity" />
+        <activity android:name=".Section2Sup93Activity" />
+        <activity android:name=".Section2Sup94Activity" />
+        <activity android:name=".Section2Sup95Activity" />
+        <activity android:name=".Section2Sup96Activity"></activity>
+    </application>
+
+</manifest>
