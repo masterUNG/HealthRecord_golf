@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     //Explicit
     private ImageView section1ImageView, section2ImageView,
-            section3ImageView, section4ImageView;
+            section3ImageView, section4ImageView, meetDoctorImageView;
 
     private TextView section1TextView, section2TextView, section3TextView, section4TextView;
 
@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         section2ImageView.setOnClickListener(this);
         section3ImageView.setOnClickListener(this);
         section4ImageView.setOnClickListener(this);
+        meetDoctorImageView.setOnClickListener(this);
     }
 
     private void bindwidget() {
@@ -50,6 +51,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         section2ImageView = (ImageView) findViewById(R.id.imageView2);
         section3ImageView = (ImageView) findViewById(R.id.imageView3);
         section4ImageView = (ImageView) findViewById(R.id.imageView4);
+        meetDoctorImageView = (ImageView) findViewById(R.id.meetDoctorView);
+
         section1TextView = (TextView) findViewById(R.id.textView);
         section2TextView = (TextView) findViewById(R.id.textView2);
         section3TextView = (TextView) findViewById(R.id.textView3);
@@ -70,20 +73,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.imageView4:
                 break;
+            case R.id.meetDoctorView:
+                startActivity(new Intent(MainActivity.this, MeetDoctorSetup.class));
+                break;
         } //switch
 
-        switch (v.getId()) {
-            case R.id.textView:
-                startActivity(new Intent(MainActivity.this, MainHoldSection1.class));
-                break;
-            case R.id.textView2:
-                startActivity(new Intent(MainActivity.this, Section2Activity.class));
-                break;
-            case R.id.textView3:
-                break;
-            case R.id.textView4:
-                break;
-        }//switch TextView
+//        switch (v.getId()) {
+//            case R.id.textView:
+//                startActivity(new Intent(MainActivity.this, MainHoldSection1.class));
+//                break;
+//            case R.id.textView2:
+//                startActivity(new Intent(MainActivity.this, Section2Activity.class));
+//                break;
+//            case R.id.textView3:
+//                break;
+//            case R.id.textView4:
+//                break;
+//        }//switch TextView
 
     } // onClick
 
