@@ -54,7 +54,27 @@ public class MeetDoctorSetup extends AppCompatActivity {
             }
         });
 
+        //Setup For Month
+        final String[] monthStrings = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10",
+                "11", "12"};
+        ArrayAdapter<String> monthAdapter = new ArrayAdapter<String>(this,
+                android.R.layout.simple_list_item_1, monthStrings);
+        monthSpinner.setAdapter(monthAdapter);
+
+        monthSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                meetMonthString = monthStrings[i];
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+                meetMonthString = monthStrings[0];
+            }
+        });
+
     }   // createSpinner
+
 
 
     private void showCurrentTime() {
