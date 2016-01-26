@@ -1,20 +1,19 @@
 package appbsru.supergolf.healthrecord;
 
-import android.app.TimePickerDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
-import android.widget.TimePicker;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
+
+import java.util.Calendar;
 
 public class MeetDoctorSetup extends AppCompatActivity {
 
     //Explicit
-    private TextView showTimeTextView;
-    private Button setupTimeButton;
-    private TimePicker myTimePicker;
-    private TimePickerDialog myTimePickerDialog;
+    private Spinner daySpinner, monthSpinner, yearSpinner;
+    private String meetDateString, meetMonthString, meetYearString;
 
 
     @Override
@@ -25,29 +24,53 @@ public class MeetDoctorSetup extends AppCompatActivity {
         //Bind Widget
         bindWidget();
 
-        //buttonController
-        buttonController();
+        //Show Current Time
+        showCurrentTime();
+
+        //Create Spinner
+        createSpinner();
 
     }   // Main Method
 
-    private void buttonController() {
+    private void createSpinner() {
 
-        setupTimeButton.setOnClickListener(new View.OnClickListener() {
+        //Setup For Date
+        final String[] dateStrings = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10",
+                "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23",
+                "24", "25", "26", "27", "28", "29", "30", "31",};
+        ArrayAdapter<String> dateAdapter = new ArrayAdapter<String>(this,
+                android.R.layout.simple_list_item_1, dateStrings);
+        daySpinner.setAdapter(dateAdapter);
+
+        daySpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
-            public void onClick(View view) {
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                meetDateString = dateStrings[i];
+            }
 
-                //Setup Clear
-                showTimeTextView.setText("");
-
-            }   // event
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+                meetDateString = dateStrings[0];
+            }
         });
 
-    }   // buttonController
+    }   // createSpinner
+
+
+    private void showCurrentTime() {
+
+        Calendar currentCalendar = Calendar.getInstance();
+
+
+    }   // showCurrentTime
+
 
     private void bindWidget() {
 
-        showTimeTextView = (TextView) findViewById(R.id.textView23);
-        setupTimeButton = (Button) findViewById(R.id.button3);
+        daySpinner = (Spinner) findViewById(R.id.spinner2);
+        monthSpinner = (Spinner) findViewById(R.id.spinner3);
+        yearSpinner = (Spinner) findViewById(R.id.spinner4);
+
 
     }   // bindWidget
 
