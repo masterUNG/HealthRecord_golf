@@ -73,7 +73,26 @@ public class MeetDoctorSetup extends AppCompatActivity {
             }
         });
 
+        //For Year
+        final String[] yearStrings = {"2016", "2017", "2018", "2019", "2020"};
+        ArrayAdapter<String> yearAdapter = new ArrayAdapter<String>(this,
+                android.R.layout.simple_list_item_1, yearStrings);
+        yearSpinner.setAdapter(yearAdapter);
+
+        yearSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                meetYearString = yearStrings[i];
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+                meetYearString = yearStrings[0];
+            }
+        });
+
     }   // createSpinner
+
 
 
 
