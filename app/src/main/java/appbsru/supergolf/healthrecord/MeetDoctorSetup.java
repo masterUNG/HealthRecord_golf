@@ -1,16 +1,20 @@
 package appbsru.supergolf.healthrecord;
 
+import android.app.TimePickerDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.TimePicker;
 
 public class MeetDoctorSetup extends AppCompatActivity {
 
     //Explicit
     private TextView showTimeTextView;
     private Button setupTimeButton;
+    private TimePicker myTimePicker;
+    private TimePickerDialog myTimePickerDialog;
 
 
     @Override
@@ -32,7 +36,8 @@ public class MeetDoctorSetup extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-
+                //Setup Clear
+                showTimeTextView.setText("");
 
             }   // event
         });

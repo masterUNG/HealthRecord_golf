@@ -22,7 +22,7 @@
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="New Text"
+                android:text="@string/showmeetdoc"
                 android:id="@+id/textView23"
                 android:layout_weight="3"
                 android:textSize="@dimen/h1" />
